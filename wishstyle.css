@@ -1,0 +1,82 @@
+body
+{ background-color:yellow;}
+ 
+
+h1
+{
+  font-size:400px;
+  text-align:center;
+ 
+  
+  background-image:linear-gradient(red,blue,lime,aqua,red,blue,green);
+  background-clip:text;
+  -webkit-background-clip:text;
+   color:transparent;
+  
+  
+}
+
+h2
+{
+ font-size:250px;
+  text-align:center;
+ 
+ 
+  background-image:linear-gradient(red,blue,green);
+  background-clip:text;
+  -webkit-background-clip:text;
+   color:transparent;
+}
+
+.d1
+{
+  
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  border-color:aqua;
+  border-style:ridge;
+  position:absolute;
+  animation-name:bubble1;
+  animation-delay:2s;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease-in;
+  animation-play-game:running;
+ 
+}
+
+@keyframes bubble1
+{
+ 0%{margin-left:1200px;border-color:aqua;transform:scale(2)}
+ 25%{margin-bottom:400px;border-color:lime;transform:scale(3)}
+ 50%{border-color:aqua;transform:scale(5)}
+ 75%{border-color:lime;transform:scale(3)}
+ 100%{border-color:aqua;transform:scale(2)}
+}
+
+.d2
+{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  border-color:aqua;
+  border-style:ridge;
+  position:absolute;
+
+  animation-name:bubble2;
+  animation-delay:2s;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  animation-play-game:running;
+}
+
+@keyframes bubble2
+{
+ 0%{margin-left:100px;border-color:blue;transform:scale(2)}
+ 25%{margin-bottom:200px;border-color:lime;transform:scale(3)}
+ 50%{margin-right:1200px;border-color:aqua;transform:scale(5)}
+ 75%{margin-right:800px;border-color:blue;transform:scale(3)}
+ 100%{margin-left:800px;border-color:lime;transform:scale(2)}
+}

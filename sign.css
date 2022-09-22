@@ -1,0 +1,43 @@
+body{
+    background-image: url("alone.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    margin:200px;
+}
+
+p{
+    color:aqua;
+    font-size:10px;
+}
+
+input{
+    width:200px;
+    height: 30px;
+    border:none;
+    border-bottom:3px solid aqua;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+    margin:10px;
+   
+}
+
+#sub{
+    
+    width:100px;
+    height: 40px;
+    border:2px solid aqua;
+    border-radius: 60px;
+    color:aqua;
+    margin-top: 10px;
+    margin-left:40px;
+    padding: 10px;
+}

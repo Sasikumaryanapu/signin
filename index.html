@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="sasi"  content="signin" />
+        <meta author="sasi" content="building a signin page"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link type="text/css" rel="stylesheet" href="sign.css" />
+        <title>signin</title>
+    </head>
+    <body>
+
+        <script>
+
+            function run(){
+
+            var mail=document.getElementById("mail").value
+            var pwd=document.getElementById("pwd").value
+
+            exp1=/[a-z]{1,9}[0-9]{1,4}/;
+            exp2=/[a-z]{1,4}[0-9]{1,4}/;
+
+            if(mail.match(exp1) && pwd.match(exp2)){
+                
+                true;
+            }
+            else{
+                alert("incorrect mail or password")
+                return false;
+            }
+
+        }
+
+        </script>
+        
+        <form onsubmit="return run()" method="post" action="/pos" >
+            <input type="text" id="mail" placeholder="enter your mail" name="mail" /><br>
+            <input type="password" id="pwd" placeholder="password" name="password" /><br>
+            <input type="submit" id="sub" value="sign in" />
+        </form>
+    </body>
+</html>
